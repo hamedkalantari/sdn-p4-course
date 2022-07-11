@@ -65,6 +65,15 @@
       "action_params": {
         "port": 1
       }
+    },
+    {
+      "table": "MyIngress.acl_exact",
+      "match": {
+        "hdr.udp.dstPort": [80],
+        "hdr.ipv4.dstAddr": ["10.0.3.3"]
+      },
+      "action_name": "MyIngress.drop",
+      "action_params": {}
     }
   ]
 }
