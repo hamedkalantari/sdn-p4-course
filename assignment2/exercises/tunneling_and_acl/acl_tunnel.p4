@@ -4,8 +4,8 @@
 
 const bit<16> TYPE_MYTUNNEL = 0x1212;
 const bit<16> TYPE_IPV4 = 0x800;
-const bit<16> TYPE_TCP = 6;
-const bit<16> TYPE_UDP = 17;
+const bit<8> TYPE_TCP = 6;
+const bit<8> TYPE_UDP = 17;
 const bit<32> MAX_TUNNEL_ID = 1 << 16;
 
 /*************************************************************************
